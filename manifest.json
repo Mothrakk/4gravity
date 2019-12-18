@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "4gravity",
+    "version": "1",
+    "description":"Adds a checkbox to the bottom of 4chan threads that, if checked, automatically keeps you anchored down.",
+    
+    "content_scripts": [
+        {
+            "matches":["*://boards.4chan.org/*/thread/*",
+                       "*://boards.4channel.org/*/thread/*"],
+            "js":["main.js"]
+        }
+    ] 
+}
